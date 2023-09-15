@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Regular';
+    src: url(fonts/Inter-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url(fonts/Inter-Medium.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url(fonts/Inter-Bold.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url(fonts/Inter-Light.ttf);
+    font-display: swap;
+}
+
+.font-regular {
+    font-family: 'Regular';
+}
+
+.font-medium {
+    font-family: 'Medium';
+}
+
+.font-bold {
+    font-family: 'Bold';
+}
+
+.font-light {
+    font-family: 'Light';
+}
+
+.ease-out-back {
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@layer components {
+    .btn-theme {
+        @apply h-[45px] bg-gradient-to-b from-[#0b8140] to-[#0a5229] rounded-[50px] text-white xl:text-base md:text-sm text-xs font-bold uppercase tracking-wide;
+    }
+}
+
+.rotate-x-90 {
+    transform: rotateX('90deg');
+}
+
+.rotate-x-0 {
+    transform: rotateX('0deg');
+}
+
+body {
+    font-family: 'Regular' Arial, sans-serif;
+}
+
+.form-group {
+    @apply block mb-7 w-full;
+}
+
+.form-label {
+    @apply text-white xl:text-base md:text-sm text-xs font-normal font-regular block mb-2;
+}
+
+.form-field {
+    @apply !w-full h-12 bg-[#1E2646] xl:text-base text-sm rounded-md border border-white border-opacity-5 outline-none text-white px-4 pb-[1px];
+}
+
+.smooth {
+    @apply ease-in duration-150
+}
+
+.signinBg {
+    background-image: url(../images/signinBg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.afterSigninBg {
+    background-image: url(../images/afterSigninBg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
