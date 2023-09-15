@@ -87,10 +87,19 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
 .afterSigninBg {
     background-image: url(../images/afterSigninBg.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.sidebar-nav {
+    @apply w-full p-5 flex items-center text-white text-sm font-regular gap-3 border-t border-t-[#283054] border-b border-b-[#283054] relative before:left-0 before:absolute before:w-0 before:h-full before:bg-[#0B8140] hover:before:w-1 before:ease-linear before:duration-75;
+}
+.sidebar-nav.active 
+{
+    @apply bg-[#11172D] before:w-1
 }
