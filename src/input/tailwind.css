@@ -147,6 +147,10 @@ table tr td
 {
     @apply text-white font-light 2xl:first:pl-7 xl:first:pl-6 first:pl-5 2xl:last:pr-7 xl:last:pr-6 last:pr-5 2xl:h-14 xl:h-12 h-10 2xl:px-5 px-3 text-sm text-left whitespace-nowrap;
 }
+table tbody tr + tr
+{
+    @apply border-t border-t-[#283054]
+}
 /* Scroll Bar */
 .x-scroll::-webkit-scrollbar {
     @apply h-[7px] bg-transparent;
@@ -165,4 +169,13 @@ table tr td
 }
 .y-scroll::-webkit-scrollbar-track {
     @apply bg-transparent
+}
+
+.pill
+{
+  @apply relative cursor-pointer py-3 px-6 text-[13px] font-semi text-white bg-[#1E2646] rounded-t-lg bg-gradient-to-b from-[#1E2646] to-[#1E2646]; 
+}
+.pill-active
+{
+  @apply from-[#0b8140] to-[#0a5229];
 }
