@@ -2,180 +2,173 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'Regular';
-    src: url(fonts/Inter-Regular.ttf);
-    font-display: swap;
-}
+@layer base {
+    @font-face {
+        font-family: 'Regular';
+        src: url(fonts/Inter-Regular.ttf);
+        font-display: swap;
+    }
 
-@font-face {
-    font-family: 'Medium';
-    src: url(fonts/Inter-Medium.ttf);
-    font-display: swap;
-}
+    @font-face {
+        font-family: 'Medium';
+        src: url(fonts/Inter-Medium.ttf);
+        font-display: swap;
+    }
 
-@font-face {
-    font-family: 'Bold';
-    src: url(fonts/Inter-Bold.ttf);
-    font-display: swap;
-}
-@font-face {
-    font-family: 'SemiBold';
-    src: url(fonts/Inter-SemiBold.ttf);
-    font-display: swap;
-}
+    @font-face {
+        font-family: 'Bold';
+        src: url(fonts/Inter-Bold.ttf);
+        font-display: swap;
+    }
 
-@font-face {
-    font-family: 'Light';
-    src: url(fonts/Inter-Light.ttf);
-    font-display: swap;
-}
+    @font-face {
+        font-family: 'SemiBold';
+        src: url(fonts/Inter-SemiBold.ttf);
+        font-display: swap;
+    }
 
-/* @font-face {
-    font-family: 'Regular';
-    src: url(fonts/MADE-TOMMY-Regular.otf);
-    font-display: swap;
-}
+    @font-face {
+        font-family: 'Light';
+        src: url(fonts/Inter-Light.ttf);
+        font-display: swap;
+    }
 
-@font-face {
-    font-family: 'Medium';
-    src: url(fonts/MADE-TOMMY-Medium.otf);
-    font-display: swap;
-}
+    .font-regular {
+        font-family: 'Regular';
+        font-weight: 400;
+    }
 
-@font-face {
-    font-family: 'Bold';
-    src: url(fonts/MADE-TOMMY-Bold.otf);
-    font-display: swap;
-}
+    .font-medium {
+        font-family: 'Medium';
+    }
 
-@font-face {
-    font-family: 'Light';
-    src: url(fonts/MADE-TOMMY-Light.otf);
-    font-display: swap;
-} */
+    .font-bold {
+        font-family: 'Bold';
+    }
 
-.font-regular {
-    font-family: 'Regular';
-    font-weight: 400;
-}
+    .font-light {
+        font-family: 'Light';
+    }
 
-.font-medium {
-    font-family: 'Medium';
-}
+    .font-semi {
+        font-family: 'SemiBold';
+        font-weight: 600;
+    }
 
-.font-bold {
-    font-family: 'Bold';
-}
+    body {
+        font-family: 'Regular' Arial, sans-serif;
+    }
 
-.font-light {
-    font-family: 'Light';
-}
-.font-semi {
-    font-family: 'SemiBold';
-    font-weight: 600;
-}
-
-.ease-out-back {
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
-}
-
-@layer components {
-    .btn-theme {
-        @apply whitespace-nowrap outline-none h-[45px] px-7 bg-gradient-to-b from-[#0b8140] to-[#0a5229] rounded-[50px] text-white xl:text-base md:text-sm text-xs font-bold uppercase tracking-wide scale-100 active:scale-[.97];
+    a {
+        @apply outline-none;
     }
 }
 
-.rotate-x-90 {
-    transform: rotateX('90deg');
+@layer components {
+    .sidebarOverlay
+    {
+        @apply fixed inset-0 bg-slate-950/60 backdrop-blur-[2px];
+    }
+    .btn-theme {
+        @apply whitespace-nowrap outline-none xl:h-[45px] lg:h-10 h-9 xl:px-7 lg:px-6 px-5 bg-gradient-to-b from-[#0b8140] to-[#0a5229] rounded-[50px] text-white xl:text-sm md:text-xs text-[11px] font-bold uppercase tracking-wide scale-100 active:scale-[.97];
+    }
+    .form-group {
+        @apply block mb-7 w-full relative;
+    }
+
+    .form-label {
+        @apply text-white xl:text-base md:text-sm text-xs font-normal font-regular block mb-2;
+    }
+
+    .form-field {
+        @apply !w-full h-12 bg-[#1E2646] xl:text-base text-sm rounded-md border border-white border-opacity-5 outline-none text-white px-4 pb-[1px];
+    }
+
+    .smooth {
+        @apply ease-in duration-150
+    }
+
+    .signinBg {
+        background-image: url(../images/signinBg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .afterSigninBg {
+        background-image: url(../images/afterSigninBg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .pill {
+        @apply relative cursor-pointer py-3 px-3 lg:text-[13px] text-xs font-semi text-white bg-[#1E2646] rounded-t-lg bg-gradient-to-b from-[#1E2646] to-[#1E2646] lg:min-w-[170px] min-w-0 text-center sm:col-span-4 col-span-6;
+    }
+
+    .pill-active {
+        @apply from-[#0b8140] to-[#0a5229];
+    }
+
+    .sidebar-nav {
+        @apply cursor-pointer w-full p-5 flex items-center text-white text-sm font-regular gap-3 border-t border-t-[#283054] border-b border-b-[#283054] relative before:left-0 before:absolute before:w-0 before:h-full before:bg-[#0B8140] hover:before:w-1 before:ease-linear before:duration-75;
+    }
+
+    .sidebar-nav.active {
+        @apply bg-[#11172D] before:w-1
+    }
+
+    table tr th {
+        @apply text-white font-semi 2xl:first:pl-7 xl:first:pl-6 first:pl-5 2xl:last:pr-7 xl:last:pr-6 last:pr-5 2xl:px-5 px-3 h-14 text-[13px] text-left bg-[#1E2646] first:rounded-tl-lg last:rounded-tr-lg whitespace-nowrap;
+        /* border border-[#283054] */
+    }
+
+    table tr td {
+        @apply text-white font-light 2xl:first:pl-7 xl:first:pl-6 first:pl-5 2xl:last:pr-7 xl:last:pr-6 last:pr-5 xl:h-14 h-12 2xl:px-5 px-3 text-sm text-left whitespace-nowrap;
+    }
+
+    table tbody tr+tr {
+        @apply border-t border-t-[#283054]
+    }
 }
 
-.rotate-x-0 {
-    transform: rotateX('0deg');
-}
+@layer utilities {
+    .ease-out-back {
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
 
-body {
-    font-family: 'Regular' Arial, sans-serif;
-}
+    .rotate-x-90 {
+        transform: rotateX('90deg');
+    }
 
-.form-group {
-    @apply block mb-7 w-full relative;
-}
+    .rotate-x-0 {
+        transform: rotateX('0deg');
+    }
 
-.form-label {
-    @apply text-white xl:text-base md:text-sm text-xs font-normal font-regular block mb-2;
-}
+    /* Scroll Bar */
+    .x-scroll::-webkit-scrollbar {
+        @apply h-[7px] bg-transparent;
+    }
 
-.form-field {
-    @apply !w-full h-12 bg-[#1E2646] xl:text-base text-sm rounded-md border border-white border-opacity-5 outline-none text-white px-4 pb-[1px];
-}
+    .x-scroll::-webkit-scrollbar-thumb {
+        @apply bg-gradient-to-b from-[#0b8140] to-[#0a5229] rounded-[50px];
+    }
 
-.smooth {
-    @apply ease-in duration-150
-}
+    .x-scroll::-webkit-scrollbar-track {
+        @apply bg-transparent
+    }
 
-.signinBg {
-    background-image: url(../images/signinBg.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
+    .y-scroll::-webkit-scrollbar {
+        @apply w-[7px] bg-transparent;
+    }
 
-.afterSigninBg {
-    background-image: url(../images/afterSigninBg.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
+    .y-scroll::-webkit-scrollbar-thumb {
+        @apply bg-gradient-to-r from-[#0b8140] to-[#0a5229] rounded-[50px];
+    }
 
-.sidebar-nav {
-    @apply cursor-pointer w-full p-5 flex items-center text-white text-sm font-regular gap-3 border-t border-t-[#283054] border-b border-b-[#283054] relative before:left-0 before:absolute before:w-0 before:h-full before:bg-[#0B8140] hover:before:w-1 before:ease-linear before:duration-75;
-}
-.sidebar-nav.active 
-{
-    @apply bg-[#11172D] before:w-1
-}
-
-table tr th
-{
-    @apply text-white font-semi 2xl:first:pl-7 xl:first:pl-6 first:pl-5 2xl:last:pr-7 xl:last:pr-6 last:pr-5 2xl:px-5 px-3 h-14 text-[13px] text-left bg-[#1E2646] first:rounded-tl-lg last:rounded-tr-lg  whitespace-nowrap;
-    /* border border-[#283054] */
-}
-table tr td
-{
-    @apply text-white font-light 2xl:first:pl-7 xl:first:pl-6 first:pl-5 2xl:last:pr-7 xl:last:pr-6 last:pr-5 2xl:h-14 xl:h-12 h-10 2xl:px-5 px-3 text-sm text-left whitespace-nowrap;
-}
-table tbody tr + tr
-{
-    @apply border-t border-t-[#283054]
-}
-/* Scroll Bar */
-.x-scroll::-webkit-scrollbar {
-    @apply h-[7px] bg-transparent;
-}
-.x-scroll::-webkit-scrollbar-thumb {
-    @apply bg-gradient-to-b from-[#0b8140] to-[#0a5229] rounded-[50px];
-}
-.x-scroll::-webkit-scrollbar-track {
-    @apply bg-transparent
-}
-.y-scroll::-webkit-scrollbar {
-    @apply w-[7px] bg-transparent;
-}
-.y-scroll::-webkit-scrollbar-thumb {
-    @apply bg-gradient-to-r from-[#0b8140] to-[#0a5229] rounded-[50px];
-}
-.y-scroll::-webkit-scrollbar-track {
-    @apply bg-transparent
-}
-
-.pill
-{
-  @apply relative cursor-pointer py-3 px-6 text-[13px] font-semi text-white bg-[#1E2646] rounded-t-lg bg-gradient-to-b from-[#1E2646] to-[#1E2646]; 
-}
-.pill-active
-{
-  @apply from-[#0b8140] to-[#0a5229];
+    .y-scroll::-webkit-scrollbar-track {
+        @apply bg-transparent
+    }
 }

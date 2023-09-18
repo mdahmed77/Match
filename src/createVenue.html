@@ -10,18 +10,26 @@
 
 <body>
   <div class="relative flex min-h-[100vh] w-full afterSigninBg">
-    <div class="bg-[#1E2646] w-[200px] flex flex-col items-center">
-      <a href="#" class="flex justify-between py-7">
+    <!-- Overlay -->
+    <div class="sidebarOverlay invisible z-40"></div>
+    <!-- Sidebar -->
+    <div id="sideBar" class="bg-[#1E2646] w-[200px] flex flex-col items-center lg:relative absolute z-50 h-[100vh] smooth lg:translate-x-0 -translate-x-full">
+      <!-- Brand -->
+      <a href="dashboard.html" class="flex justify-between py-7">
         <img src="assets/images/logo.svg" class="max-h-[70px] w-auto" alt="" />
       </a>
+      <!-- Sidebar Closer -->
+      <button id="sidebarCloser" class="h-10 min-w-[40px] rounded-full bg-white lg:hidden inline-flex items-center justify-center absolute top-3 right-0 invisible opacity-0 translate-x-full smooth">
+        <img src="assets/images/backArrow.svg" class="relative right-[1px]" alt="">
+      </button>
       <div class="grow flex flex-col w-full items-start">
-        <a href="#" class="sidebar-nav">
+        <a href="dashboard.html" class="sidebar-nav">
           <div class="h-5 w-5">
             <img src="assets/images/icon-dashboard.svg" class="h-full w-full object-contain" alt="" />
           </div>
           <span>Dashboard</span>
         </a>
-        <a href="#" class="sidebar-nav !border-t-0">
+        <a href="players.html" class="sidebar-nav !border-t-0">
           <div class="h-5 w-5">
             <img src="assets/images/icon-players.svg" class="h-full w-full object-contain" alt="" />
           </div>
@@ -38,39 +46,39 @@
             </div>
           </div>
           <div class="flex flex-col w-full h-0 overflow-hidden group-hover:h-auto">
-            <a href="#" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60">
+            <a href="createVenue.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60">
               <span class="inline-block ml-8">Venues 1</span>
             </a>
-            <a href="#" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60 mb-3">
+            <a href="createVenue.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60 mb-3">
               <span class="inline-block ml-8">Venues 2</span>
             </a>
           </div>
         </div>
-        <a href="#" class="sidebar-nav !border-t-0">
+        <a href="creditPurchased.html" class="sidebar-nav !border-t-0">
           <div class="h-5 w-5">
             <img src="assets/images/icon-credit.svg" class="h-full w-full object-contain" alt="" />
           </div>
           <span>Credits Purchased</span>
         </a>
-        <a href="#" class="sidebar-nav !border-t-0">
+        <a href="games.html" class="sidebar-nav !border-t-0">
           <div class="h-5 w-5">
             <img src="assets/images/icon-games.svg" class="h-full w-full object-contain" alt="" />
           </div>
           <span>Games</span>
         </a>
-        <a href="#" class="sidebar-nav !border-t-0">
+        <a href="teams.html" class="sidebar-nav !border-t-0">
           <div class="h-5 w-5">
             <img src="assets/images/icon-teams.svg" class="h-full w-full object-contain" alt="" />
           </div>
           <span>Teams</span>
         </a>
-        <a href="#" class="sidebar-nav !border-t-0">
+        <a href="notifications.html" class="sidebar-nav !border-t-0">
           <div class="h-5 w-5">
             <img src="assets/images/icon-notifications.svg" class="h-full w-full object-contain" alt="" />
           </div>
           <span>Notifications</span>
         </a>
-        <a href="#" class="sidebar-nav mt-auto">
+        <a href="signin.html" class="sidebar-nav mt-auto">
           <div class="h-5 w-5">
             <img src="assets/images/icon-logout.svg" class="h-full w-full object-contain" alt="" />
           </div>
@@ -78,11 +86,15 @@
         </a>
       </div>
     </div>
-    <div class="w-[calc(100%-200px)]">
-      <div class="flex items-center border-b border-b-[#283054] py-4 px-9">
-        <h6 class="text-white text-base font-bold">Welcom Back!</h6>
+    <div class="lg:w-[calc(100%-200px)] w-full">
+      <!-- Right Panel Topbar -->
+      <div class="flex items-center border-b border-b-[#283054] xl:py-4 py-3 xl:px-9 px-5">
+        <button id="sidebarOpener" class="h-10 min-w-[40px] rounded-full bg-white lg:hidden inline-flex mr-3 items-center justify-center">
+          <img src="assets/images/backArrow.svg" class="rotate-180 relative right-[1px]" alt="">
+        </button>
+        <h6 class="text-white text-base font-bold lg:block hidden">Welcom Back!</h6>
         <div class="inline-flex items-center ml-auto">
-          <div class="flex items-center mr-5 border border-[#283054] rounded-3xl px-5 w-[400px]">
+          <div class="flex items-center xl:mr-5 border border-[#283054] rounded-3xl px-5 lg:w-[400px] w-auto">
             <input type="text"
               class="bg-transparent border-none outline-none h-10 text-white placeholder:text-white text-xs font-regular w-full"
               placeholder="Search">
@@ -90,20 +102,32 @@
               <img src="assets/images/search.svg" alt="">
             </button>
           </div>
-          <button class="h-10 w-10 bg-white inline-flex items-center justify-center rounded-[50px] border-none">
+          <button class="h-10 w-10 bg-white xl:inline-flex hidden items-center justify-center rounded-[50px] border-none">
             <img src="assets/images/bell.svg" class="max-h-5 w-auto" alt="">
           </button>
-          <div class="inline-flex items-center ml-10 gap-[10px]">
-            <span class="text-white font-bold text-base">John Smith</span>
-            <img src="assets/images/user.png" class="rounded-[50px] h-10 w-10 object-cover" alt="">
-            <img src="assets/images/caret-down.svg" class="h-[6px] w-auto" alt="">
+          <div class="xl:ml-10 ml-3 relative">
+            <button id="toggleUserDrop" class="inline-flex items-center gap-[10px] outline-none">
+              <span class="text-white font-bold text-base xl:block hidden">John Smith</span>
+              <img src="assets/images/person.jpg" class="rounded-[50px] h-10 min-w-[40px] object-cover" alt="">
+              <img src="assets/images/caret-down.svg" class="h-[6px] w-auto" alt="">
+            </button>
+            <!-- User Drop Down -->
+            <div id="userDrop" class="absolute px-4 pb-3 rounded-lg bg-[#1E2646] top-[calc(100%+10px)] right-0 z-30 min-w-[160px] shadow-lg shadow-slate-950/30 invisible opacity-0 translate-y-3 ease-in-out duration-150">
+              <div class="flex items-center gap-3 py-4 border-b border-b-white/10 mb-2">
+                <img src="assets/images/person.jpg" class="rounded-[50px] h-7 min-w-[28px] object-cover" alt="">
+                <span class="text-white font-light text-xs block">John Smith</span>
+              </div>
+              <a class="text-white font-light hover:font-bold text-xs py-2 flex items-center gap-3" href=""><img src="assets/images/icon-players.svg" class="h-auto max-h-5 w-4" alt=""> Profile</a>
+              <a class="text-white font-light hover:font-bold text-xs py-2 flex items-center gap-3" href=""><img src="assets/images/icon-dashboard.svg" class="h-auto max-h-5 w-4" alt=""> Settings</a>
+              <a class="text-white font-light hover:font-bold text-xs py-2 flex items-center gap-3" href="signin.html"><img src="assets/images/icon-logout.svg" class="h-auto max-h-5 w-4" alt=""> Logout</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="relative px-9 py-7 max-h-[calc(100vh-75px)] overflow-y-auto y-scroll">
+      <div class="relative xl:px-9 px-5 xl:py-7 py-4 lg:max-h-[calc(100vh-75px)] max-h-[calc(100vh-67px)] overflow-y-auto y-scroll">
         <div class="xl:max-w-[700px] max-w-full xl:pr-20 block mx-auto">
           <div class="xl:absolute relative xl:top-7 xl:left-9">
-            <a href="#" class="text-white text-base font-bold inline-flex items-center gap-2 py-1 mb-3"><img
+            <a href="#" class="text-white text-base font-bold inline-flex items-center gap-2 py-1 mb-3 outline-none"><img
                 src="assets/images/backArrow.svg" class=" max-h-[14px] w-auto" alt=""> Back</a>
           </div>
           <div class="relative">
@@ -213,6 +237,9 @@
       </div>
     </div>
   </div>
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/theme.js"></script>
 </body>
 
 </html>

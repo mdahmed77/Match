@@ -1,14 +1,16 @@
 $(document).ready(function () {
-    // var menu = $('#mobileMenu');
-    // var backdrop = $('#menuBackdrop');
-    // $('#menuOpener').on('click', function () {
-    //     menu.removeClass('translate-x-full').addClass('translate-x-0');
-    //     backdrop.removeClass('opacity-0 invisible').addClass('opacity-50 visible');
-    // });
-    // $('#menuCloser').on('click', function () {
-    //     menu.removeClass('translate-x-0').addClass('translate-x-full');
-    //     backdrop.addClass('opacity-0 invisible').removeClass('opacity-50 visible');
-    // });
+    var menu = $('#sideBar');
+    var backdrop = $('.sidebarOverlay');
+    $('#sidebarOpener').on('click', function () {
+        menu.removeClass('-translate-x-full').addClass('translate-x-0');
+        backdrop.removeClass('invisible').addClass('visible');
+        $('#sidebarCloser').removeClass('opacity-0 right-0 invisible').addClass('opacity-100 -right-5 visible');
+    });
+    $('#sidebarCloser, .sidebarOverlay').on('click', function () {
+        menu.removeClass('translate-x-0').addClass('-translate-x-full');
+        backdrop.addClass('invisible').removeClass('visible');
+        $('#sidebarCloser').removeClass('opacity-100 -right-5 visible').addClass('opacity-0 right-0 invisible');
+    });
     $('.pill').each(function () {
         $(this).on('click', function () {
             var pillName = $(this).attr("data-pill");
@@ -19,5 +21,10 @@ $(document).ready(function () {
             $('.pill-tab.block').removeClass('block').addClass('hidden');
             $("#" + pillName).removeClass('hidden').addClass("block");
         });
+    });
+    $('#toggleUserDrop').on('click', function(){
+        $('#userDrop').hasClass('invisible') 
+        ? $('#userDrop').removeClass('invisible opacity-0 translate-y-3').addClass('visible opacity-1 translate-y-0')
+        : $('#userDrop').addClass('invisible opacity-0 translate-y-3').removeClass('visible opacity-1 translate-y-0');
     });
 });

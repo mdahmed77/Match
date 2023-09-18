@@ -54,7 +54,7 @@
             </a>
           </div>
         </div>
-        <a href="creditPurchased.html" class="sidebar-nav !border-t-0 active">
+        <a href="creditPurchased.html" class="sidebar-nav !border-t-0">
           <div class="h-5 w-5">
             <img src="assets/images/icon-credit.svg" class="h-full w-full object-contain" alt="" />
           </div>
@@ -72,7 +72,7 @@
           </div>
           <span>Teams</span>
         </a>
-        <a href="notifications.html" class="sidebar-nav !border-t-0">
+        <a href="notifications.html" class="sidebar-nav !border-t-0 active">
           <div class="h-5 w-5">
             <img src="assets/images/icon-notifications.svg" class="h-full w-full object-contain" alt="" />
           </div>
@@ -125,131 +125,33 @@
         </div>
       </div>
       <div class="relative xl:px-9 px-5 xl:py-7 py-4 lg:max-h-[calc(100vh-75px)] max-h-[calc(100vh-67px)] overflow-y-auto y-scroll">
-        <div class="flex lg:flex-row flex-col gap-4 items-center justify-between">
-          <h6 class="text-white text-base font-regular">Credits Purchased1</h6>
-          <button class="btn-theme">Create a Venue</button>
-        </div>
-        <div class="lg:flex lg:justify-start grid grid-cols-12 gap-1 lg:mt-6 mt-5">
-          <span data-pill="purchases" class="pill pill-active">Purchases</span>
-          <span data-pill="cashOut" class="pill">Cash Out</span>
-          <span data-pill="gameFreeTransfer" class="pill">Game Free Transfer</span>
-        </div>
+        <h6 class="text-white text-base font-regular">Create Notifications</h6>
         <div class="mt-7">
-          <div id="purchases" class="pill-tab block">
-            <div class="overflow-x-auto x-scroll">
-              <table class="min-w-full">
-                <thead>
-                  <tr>
-                    <th>Name of Player</th>
-                    <th>Date of Purchase</th>
-                    <th>Time of purchase</th>
-                    <th>Purchase Amount</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>John Smith</td>
-                    <td>5-15-2023</td>
-                    <td>08:00 PM</td>
-                    <td>$2515</td>
-                  </tr>
-                  <tr>
-                    <td>John Smith</td>
-                    <td>5-15-2023</td>
-                    <td>08:00 PM</td>
-                    <td>$2515</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div id="cashOut" class="pill-tab hidden">
-            <div class="overflow-x-auto x-scroll">
-              <table class="min-w-full">
-                <thead>
-                  <tr>
-                    <th>Name of Player</th>
-                    <th>Date of cash out</th>
-                    <th>Time of Cash out</th>
-                    <th>Cash Out Amount</th>
-                    <th>Completed</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>John Smith</td>
-                    <td>5-15-2023</td>
-                    <td>08:00 PM</td>
-                    <td>$2515</td>
-                    <td>
-                      <div class="inline-flex items-center gap-2">
-                        <img src="assets/images/yesCircle.svg" class="h-[22px] w-auto" alt=""> Yes
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>John Smith</td>
-                    <td>5-15-2023</td>
-                    <td>08:00 PM</td>
-                    <td>$2515</td>
-                    <td>
-                      <div class="inline-flex items-center gap-2">
-                        <img src="assets/images/noCircle.svg" class="h-[22px] w-auto" alt=""> No
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>John Smith</td>
-                    <td>5-15-2023</td>
-                    <td>08:00 PM</td>
-                    <td>$2515</td>
-                    <td>
-                      <div class="inline-flex items-center gap-2">
-                        <img src="assets/images/yesCircle.svg" class="h-[22px] w-auto" alt=""> Yes
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div id="gameFreeTransfer" class="pill-tab hidden">
-            <div class="overflow-x-auto x-scroll">
-              <table class="min-w-full">
-                <thead>
-                  <tr>
-                    <th>Name of Sender</th>
-                    <th>Name of Recipient</th>
-                    <th>Date of Transfer</th>
-                    <th>Time of Transfer</th>
-                    <th>Transfer Amount</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>John Smith</td>
-                    <td>John Smith</td>
-                    <td>5-15-2023</td>
-                    <td>08:00 PM</td>
-                    <td>$2515</td>
-                  </tr>
-                  <tr>
-                    <td>John Smith</td>
-                    <td>John Smith</td>
-                    <td>5-15-2023</td>
-                    <td>08:00 PM</td>
-                    <td>$2515</td>
-                  </tr>
-                  <tr>
-                    <td>John Smith</td>
-                    <td>John Smith</td>
-                    <td>5-15-2023</td>
-                    <td>08:00 PM</td>
-                    <td>$2515</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div class="overflow-x-auto x-scroll">
+            <table class="min-w-full table-fixed">
+              <thead>
+                <tr>
+                  <th>Group Name</th>
+                  <th>Group Captain</th>
+                  <th>County</th>
+                  <th>Amount of players in Group</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Group abc</td>
+                  <td>John Smith</td>
+                  <td>4547981</td>
+                  <td>5 v 5</td>
+                </tr>
+                <tr>
+                  <td>Group Phoenix</td>
+                  <td>Micheal Sivartz</td>
+                  <td>1327981</td>
+                  <td>10 v 10</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
