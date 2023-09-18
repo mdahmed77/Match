@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match Master</title>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+</head>
+
+<body>
+  <div class="relative flex min-h-[100vh] w-full afterSigninBg">
+    <div class="bg-[#1E2646] w-[200px] flex flex-col items-center">
+      <a href="#" class="flex justify-between py-7">
+        <img src="assets/images/logo.svg" class="max-h-[70px] w-auto" alt="" />
+      </a>
+      <div class="grow flex flex-col w-full items-start">
+        <a href="#" class="sidebar-nav">
+          <div class="h-5 w-5">
+            <img src="assets/images/icon-dashboard.svg" class="h-full w-full object-contain" alt="" />
+          </div>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="sidebar-nav !border-t-0">
+          <div class="h-5 w-5">
+            <img src="assets/images/icon-players.svg" class="h-full w-full object-contain" alt="" />
+          </div>
+          <span>Players</span>
+        </a>
+        <div class="group flex flex-col w-full border-b border-b-[#283054]">
+          <div class="sidebar-nav !border-t-0 !border-b-0 group-hover:before:w-1 active">
+            <div class="h-5 w-5">
+              <img src="assets/images/icon-venues.svg" class="h-full w-full object-contain" alt="" />
+            </div>
+            <span>Venues</span>
+            <div class="ml-auto">
+              <img src="assets/images/caret-down.svg" class="max-h-[6px] w-auto group-hover:rotate-180" alt="">
+            </div>
+          </div>
+          <div class="flex flex-col w-full h-0 overflow-hidden group-hover:h-auto">
+            <a href="#" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60">
+              <span class="inline-block ml-8">Venues 1</span>
+            </a>
+            <a href="#" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60 mb-3">
+              <span class="inline-block ml-8">Venues 2</span>
+            </a>
+          </div>
+        </div>
+        <a href="#" class="sidebar-nav !border-t-0">
+          <div class="h-5 w-5">
+            <img src="assets/images/icon-credit.svg" class="h-full w-full object-contain" alt="" />
+          </div>
+          <span>Credits Purchased</span>
+        </a>
+        <a href="#" class="sidebar-nav !border-t-0">
+          <div class="h-5 w-5">
+            <img src="assets/images/icon-games.svg" class="h-full w-full object-contain" alt="" />
+          </div>
+          <span>Games</span>
+        </a>
+        <a href="#" class="sidebar-nav !border-t-0">
+          <div class="h-5 w-5">
+            <img src="assets/images/icon-teams.svg" class="h-full w-full object-contain" alt="" />
+          </div>
+          <span>Teams</span>
+        </a>
+        <a href="#" class="sidebar-nav !border-t-0">
+          <div class="h-5 w-5">
+            <img src="assets/images/icon-notifications.svg" class="h-full w-full object-contain" alt="" />
+          </div>
+          <span>Notifications</span>
+        </a>
+        <a href="#" class="sidebar-nav mt-auto">
+          <div class="h-5 w-5">
+            <img src="assets/images/icon-logout.svg" class="h-full w-full object-contain" alt="" />
+          </div>
+          <span>Logout</span>
+        </a>
+      </div>
+    </div>
+    <div class="w-[calc(100%-200px)]">
+      <div class="flex items-center border-b border-b-[#283054] py-4 px-9">
+        <h6 class="text-white text-base font-bold">Welcom Back!</h6>
+        <div class="inline-flex items-center ml-auto">
+          <div class="flex items-center mr-5 border border-[#283054] rounded-3xl px-5 w-[400px]">
+            <input type="text"
+              class="bg-transparent border-none outline-none h-10 text-white placeholder:text-white text-xs font-regular w-full"
+              placeholder="Search">
+            <button class="h-10 ml-3">
+              <img src="assets/images/search.svg" alt="">
+            </button>
+          </div>
+          <button class="h-10 w-10 bg-white inline-flex items-center justify-center rounded-[50px] border-none">
+            <img src="assets/images/bell.svg" class="max-h-5 w-auto" alt="">
+          </button>
+          <div class="inline-flex items-center ml-10 gap-[10px]">
+            <span class="text-white font-bold text-base">John Smith</span>
+            <img src="assets/images/user.png" class="rounded-[50px] h-10 w-10 object-cover" alt="">
+            <img src="assets/images/caret-down.svg" class="h-[6px] w-auto" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="relative px-9 py-7 max-h-[calc(100vh-75px)] overflow-y-auto y-scroll">
+        <div class="xl:max-w-[700px] max-w-full xl:pr-20 block mx-auto">
+          <div class="xl:absolute relative xl:top-7 xl:left-9">
+            <a href="#" class="text-white text-base font-bold inline-flex items-center gap-2 py-1 mb-3"><img
+                src="assets/images/backArrow.svg" class=" max-h-[14px] w-auto" alt=""> Back</a>
+          </div>
+          <div class="relative">
+            <h3 class="text-white text-[25px] font-regular mb-11">Create a Venue</h3>
+            <div class="grid grid-cols-12 xl:gap-x-10 md:gap-x-8 gap-x-7 items-center">
+              <div class="lg:col-span-4 col-span-12">
+                <div class="form-group lg:pr-5 lg:max-w-full max-w-[180px] mx-auto">
+                  <div class="relative">
+                    <img src="assets/images/avatarBg.svg" class="w-full h-auto" alt="">
+                    <div class="absolute inset-0 z-10 overflow-hidden">
+                      <!-- Uploaded Image will place here -->
+                      <!-- Comment the image tag below to view the default State -->
+                      <img src="assets/images/person.jpg" class="w-full h-full object-cover rounded-full" alt="">
+                    </div>
+                    <div
+                      class="overflow-hidden absolute bottom-0 right-4 h-11 w-11 rounded-[50px] bg-gradient-to-b from-[#0b8140] to-[#0a5229] inline-flex items-center justify-center z-20">
+                      <img src="assets/images/camera.svg" class="h-4 w-auto" alt="">
+                      <input type="file" class="opacity-0 absolute inset-0 z-10 cursor-pointer"
+                        accept="image/png, image/gif, image/jpeg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:col-span-8 col-span-12">
+                <div class="form-group">
+                  <div
+                    class="bg-[#1E2646] flex items-center justify-center rounded-md overflow-hidden mb-16 border border-white/5 aspect-[16/6]">
+                    <span class="text-base font-regular text-white">Add Banner Photo</span>
+                    <div
+                      class="absolute left-[50%] bottom-0 -translate-x-[50%] translate-y-[50%] h-11 w-11 rounded-[50px] bg-gradient-to-b from-[#0b8140] to-[#0a5229] inline-flex items-center justify-center z-20 after:content-['Optional'] after:absolute after:top-full after:pt-2 after:text-xs after:font-regular after:text-white">
+                      <img src="assets/images/plus.svg" class="h-4 w-auto" alt="">
+                      <input type="file" class="opacity-0 absolute inset-0 z-10 cursor-pointer"
+                        accept="image/png, image/gif, image/jpeg">
+                    </div>
+                    <!-- User Uploaded Banner will place here -->
+                    <!-- Comment the image tag below to view the default State -->
+                    <img src="assets/images/banner.jpg" class="absolute h-full w-full z-10 object-cover rounded-md"
+                      alt="">
+                  </div>
+
+                </div>
+              </div>
+              <div class="md:col-span-6 col-span-12">
+                <div class="form-group">
+                  <label for="" class="form-label">Username</label>
+                  <input type="text" class="form-field">
+                </div>
+              </div>
+              <div class="md:col-span-6 col-span-12">
+                <div class="form-group">
+                  <label for="" class="form-label">Country</label>
+                  <input type="text" class="form-field">
+                </div>
+              </div>
+              <div class="md:col-span-6 col-span-12">
+                <div class="form-group">
+                  <label for="" class="form-label">Venue Phone</label>
+                  <input type="text" class="form-field">
+                </div>
+              </div>
+              <div class="md:col-span-6 col-span-12">
+                <div class="form-group">
+                  <label for="" class="form-label">Town</label>
+                  <input type="text" class="form-field">
+                </div>
+              </div>
+              <div class="md:col-span-6 col-span-12">
+                <div class="form-group">
+                  <label for="" class="form-label">Venue Email</label>
+                  <input type="text" class="form-field">
+                </div>
+              </div>
+              <div class="md:col-span-6 col-span-12">
+                <div class="form-group">
+                  <label for="" class="form-label">€ Off Peak / On Peak</label>
+                  <input type="text" class="form-field">
+                </div>
+              </div>
+              <div class="md:col-span-6 col-span-12">
+                <div class="grid grid-cols-12 gap-x-5">
+                  <div class="col-span-6">
+                    <div class="form-group">
+                      <label for="" class="form-label">Open Time</label>
+                      <input type="time" class="form-field">
+                    </div>
+                  </div>
+                  <div class="col-span-6">
+                    <div class="form-group">
+                      <label for="" class="form-label">Closing Time</label>
+                      <input type="time" class="form-field">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="md:col-span-6 col-span-12">
+                <div class="form-group">
+                  <label for="" class="form-label">Add venue message</label>
+                  <input type="text" class="form-field">
+                </div>
+              </div>
+              <div class="col-span-12">
+                <button class="btn-theme mt-6 mb-10">Create a Venue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

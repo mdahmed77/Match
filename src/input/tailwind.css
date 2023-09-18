@@ -19,6 +19,11 @@
     src: url(fonts/Inter-Bold.ttf);
     font-display: swap;
 }
+@font-face {
+    font-family: 'SemiBold';
+    src: url(fonts/Inter-SemiBold.ttf);
+    font-display: swap;
+}
 
 @font-face {
     font-family: 'Light';
@@ -66,6 +71,10 @@
 .font-light {
     font-family: 'Light';
 }
+.font-semi {
+    font-family: 'SemiBold';
+    font-weight: 600;
+}
 
 .ease-out-back {
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
@@ -73,7 +82,7 @@
 
 @layer components {
     .btn-theme {
-        @apply h-[45px] bg-gradient-to-b from-[#0b8140] to-[#0a5229] rounded-[50px] text-white xl:text-base md:text-sm text-xs font-bold uppercase tracking-wide;
+        @apply whitespace-nowrap outline-none h-[45px] px-7 bg-gradient-to-b from-[#0b8140] to-[#0a5229] rounded-[50px] text-white xl:text-base md:text-sm text-xs font-bold uppercase tracking-wide scale-100 active:scale-[.97];
     }
 }
 
@@ -90,7 +99,7 @@ body {
 }
 
 .form-group {
-    @apply block mb-7 w-full;
+    @apply block mb-7 w-full relative;
 }
 
 .form-label {
@@ -128,7 +137,32 @@ body {
 {
     @apply bg-[#11172D] before:w-1
 }
-.sidebar-nav.open span + * img
+
+table tr th
 {
-    transform: rotate(180deg);
-} 
+    @apply text-white font-semi 2xl:first:pl-7 xl:first:pl-6 first:pl-5 2xl:last:pr-7 xl:last:pr-6 last:pr-5 2xl:px-5 px-3 h-14 text-[13px] text-left bg-[#1E2646] first:rounded-tl-lg last:rounded-tr-lg  whitespace-nowrap;
+    /* border border-[#283054] */
+}
+table tr td
+{
+    @apply text-white font-light 2xl:first:pl-7 xl:first:pl-6 first:pl-5 2xl:last:pr-7 xl:last:pr-6 last:pr-5 2xl:h-14 xl:h-12 h-10 2xl:px-5 px-3 text-sm text-left whitespace-nowrap;
+}
+/* Scroll Bar */
+.x-scroll::-webkit-scrollbar {
+    @apply h-[7px] bg-transparent;
+}
+.x-scroll::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-[#0b8140] to-[#0a5229] rounded-[50px];
+}
+.x-scroll::-webkit-scrollbar-track {
+    @apply bg-transparent
+}
+.y-scroll::-webkit-scrollbar {
+    @apply w-[7px] bg-transparent;
+}
+.y-scroll::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-r from-[#0b8140] to-[#0a5229] rounded-[50px];
+}
+.y-scroll::-webkit-scrollbar-track {
+    @apply bg-transparent
+}
