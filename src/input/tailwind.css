@@ -26,8 +26,33 @@
     font-display: swap;
 }
 
+/* @font-face {
+    font-family: 'Regular';
+    src: url(fonts/MADE-TOMMY-Regular.otf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url(fonts/MADE-TOMMY-Medium.otf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url(fonts/MADE-TOMMY-Bold.otf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url(fonts/MADE-TOMMY-Light.otf);
+    font-display: swap;
+} */
+
 .font-regular {
     font-family: 'Regular';
+    font-weight: 400;
 }
 
 .font-medium {
@@ -97,9 +122,13 @@ body {
 }
 
 .sidebar-nav {
-    @apply w-full p-5 flex items-center text-white text-sm font-regular gap-3 border-t border-t-[#283054] border-b border-b-[#283054] relative before:left-0 before:absolute before:w-0 before:h-full before:bg-[#0B8140] hover:before:w-1 before:ease-linear before:duration-75;
+    @apply cursor-pointer w-full p-5 flex items-center text-white text-sm font-regular gap-3 border-t border-t-[#283054] border-b border-b-[#283054] relative before:left-0 before:absolute before:w-0 before:h-full before:bg-[#0B8140] hover:before:w-1 before:ease-linear before:duration-75;
 }
 .sidebar-nav.active 
 {
     @apply bg-[#11172D] before:w-1
 }
+.sidebar-nav.open span + * img
+{
+    transform: rotate(180deg);
+} 

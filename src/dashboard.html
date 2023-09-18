@@ -27,12 +27,25 @@
           </div>
           <span>Players</span>
         </a>
-        <a href="#" class="sidebar-nav !border-t-0">
-          <div class="h-5 w-5">
-            <img src="assets/images/icon-venues.svg" class="h-full w-full object-contain" alt="" />
+        <div class="group flex flex-col w-full border-b border-b-[#283054]">
+          <div class="sidebar-nav open !border-t-0 !border-b-0 group-hover:before:w-1">
+            <div class="h-5 w-5">
+              <img src="assets/images/icon-venues.svg" class="h-full w-full object-contain" alt="" />
+            </div>
+            <span>Venues</span>
+            <div class="ml-auto">
+              <img src="assets/images/caret-down.svg" class="max-h-[6px] w-auto" alt="">
+            </div>
           </div>
-          <span>Venues</span>
-        </a>
+          <div class="h-0 overflow-hidden">
+            <a href="#" class="text-white px-5 text-xs py-2 bg-[#11172d]/60">
+              <span class="inline-block ml-8">Venues 1</span>
+            </a>
+            <a href="#" class="text-white px-5 text-xs py-2 mb-3">
+              <span class="inline-block ml-8">Venues 2</span>
+            </a>
+          </div>
+        </div>
         <a href="#" class="sidebar-nav !border-t-0">
           <div class="h-5 w-5">
             <img src="assets/images/icon-credit.svg" class="h-full w-full object-contain" alt="" />
@@ -63,6 +76,29 @@
           </div>
           <span>Logout</span>
         </a>
+      </div>
+    </div>
+    <div class="w-[calc(100%-200px)]">
+      <div class="flex items-center border-b border-b-[#283054] py-4 px-9">
+        <h6 class="text-white text-base font-bold">Welcom Back!</h6>
+        <div class="inline-flex items-center ml-auto">
+          <div class="flex items-center mr-5 border border-[#283054] rounded-3xl px-5 w-[400px]">
+            <input type="text"
+              class="bg-transparent border-none outline-none h-10 text-white placeholder:text-white text-xs font-regular w-full"
+              placeholder="Search">
+            <button class="h-10 ml-3">
+              <img src="assets/images/search.svg" alt="">
+            </button>
+          </div>
+          <button class="h-10 w-10 bg-white inline-flex items-center justify-center rounded-[50px] border-none">
+            <img src="assets/images/bell.svg" class="max-h-5 w-auto" alt="">
+          </button>
+          <div class="inline-flex items-center ml-10 gap-[10px]">
+            <span class="text-white font-bold text-base">John Smith</span>
+            <img src="assets/images/user.png" class="rounded-[50px] h-10 w-10 object-cover" alt="">
+            <img src="assets/images/caret-down.svg" class="h-[6px] w-auto" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </div>
