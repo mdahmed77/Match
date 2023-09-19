@@ -36,20 +36,22 @@
           <span>Players</span>
         </a>
         <div class="group flex flex-col w-full border-b border-b-[#283054]">
-          <div class="sidebar-nav !border-t-0 !border-b-0 group-hover:before:w-1 active">
-            <div class="h-5 w-5">
-              <img src="assets/images/icon-venues.svg" class="h-full w-full object-contain" alt="" />
-            </div>
-            <span>Venues</span>
-            <div class="ml-auto">
-              <img src="assets/images/caret-down.svg" class="max-h-[6px] w-auto group-hover:rotate-180" alt="">
+          <div class="sidebar-nav !border-t-0 !border-b-0 group-hover:before:w-1">
+            <a class="inline-flex items-center gap-3" href="venues.html">
+              <div class="h-5 w-5">
+                <img src="assets/images/icon-venues.svg" class="h-full w-full object-contain" alt="" />
+              </div>
+              <span>Venues</span>
+            </a>
+            <div class="absolute right-0 items-center p-5 toggleSidebarDropdown">
+              <img src="assets/images/caret-down.svg" class="max-h-[6px] inline-block w-auto" alt="">
             </div>
           </div>
-          <div class="flex flex-col w-full h-0 overflow-hidden group-hover:h-auto">
-            <a href="createVenue.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60">
+          <div class="flex flex-col w-full h-0 overflow-hidden">
+            <a href="venueDetail.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60">
               <span class="inline-block ml-8">Venues 1</span>
             </a>
-            <a href="createVenue.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60 mb-3">
+            <a href="venueDetail.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60 mb-3">
               <span class="inline-block ml-8">Venues 2</span>
             </a>
           </div>
@@ -127,7 +129,7 @@
       <div class="relative xl:px-9 px-5 xl:py-7 py-4 lg:max-h-[calc(100vh-75px)] max-h-[calc(100vh-67px)] overflow-y-auto y-scroll">
         <div class="xl:max-w-[700px] max-w-full xl:pr-20 block mx-auto">
           <div class="xl:absolute relative xl:top-7 xl:left-9">
-            <a href="#" class="text-white text-base font-bold inline-flex items-center gap-2 py-1 mb-3 outline-none"><img
+            <a href="venues.html" class="text-white text-base font-bold inline-flex items-center gap-2 py-1 mb-3 outline-none"><img
                 src="assets/images/backArrow.svg" class=" max-h-[14px] w-auto" alt=""> Back</a>
           </div>
           <div class="relative">

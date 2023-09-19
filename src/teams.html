@@ -37,19 +37,21 @@
         </a>
         <div class="group flex flex-col w-full border-b border-b-[#283054]">
           <div class="sidebar-nav !border-t-0 !border-b-0 group-hover:before:w-1">
-            <div class="h-5 w-5">
-              <img src="assets/images/icon-venues.svg" class="h-full w-full object-contain" alt="" />
-            </div>
-            <span>Venues</span>
-            <div class="ml-auto">
-              <img src="assets/images/caret-down.svg" class="max-h-[6px] w-auto group-hover:rotate-180" alt="">
+            <a class="inline-flex items-center gap-3" href="venues.html">
+              <div class="h-5 w-5">
+                <img src="assets/images/icon-venues.svg" class="h-full w-full object-contain" alt="" />
+              </div>
+              <span>Venues</span>
+            </a>
+            <div class="absolute right-0 items-center p-5 toggleSidebarDropdown">
+              <img src="assets/images/caret-down.svg" class="max-h-[6px] inline-block w-auto" alt="">
             </div>
           </div>
-          <div class="flex flex-col w-full h-0 overflow-hidden group-hover:h-auto">
-            <a href="createVenue.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60">
+          <div class="flex flex-col w-full h-0 overflow-hidden">
+            <a href="venueDetail.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60">
               <span class="inline-block ml-8">Venues 1</span>
             </a>
-            <a href="createVenue.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60 mb-3">
+            <a href="venueDetail.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60 mb-3">
               <span class="inline-block ml-8">Venues 2</span>
             </a>
           </div>

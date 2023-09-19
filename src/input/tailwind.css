@@ -70,7 +70,7 @@
         @apply fixed inset-0 bg-slate-950/60 backdrop-blur-[2px];
     }
     .btn-theme {
-        @apply whitespace-nowrap outline-none xl:h-[45px] lg:h-10 h-9 xl:px-7 lg:px-6 px-5 bg-gradient-to-b from-[#0b8140] to-[#0a5229] rounded-[50px] text-white xl:text-sm md:text-xs text-[11px] font-bold uppercase tracking-wide scale-100 active:scale-[.97];
+        @apply inline-flex items-center justify-center whitespace-nowrap outline-none xl:h-[45px] lg:h-10 h-9 xl:px-7 lg:px-6 px-5 bg-gradient-to-b from-[#0b8140] to-[#0a5229] rounded-[50px] text-white xl:text-sm md:text-xs text-[11px] font-bold uppercase tracking-wide scale-100 active:scale-[.97];
     }
     .form-group {
         @apply block mb-7 w-full relative;
@@ -113,7 +113,7 @@
     }
 
     .sidebar-nav {
-        @apply cursor-pointer w-full p-5 flex items-center text-white text-sm font-regular gap-3 border-t border-t-[#283054] border-b border-b-[#283054] relative before:left-0 before:absolute before:w-0 before:h-full before:bg-[#0B8140] hover:before:w-1 before:ease-linear before:duration-75;
+        @apply relative cursor-pointer w-full p-5 flex items-center text-white text-sm font-regular gap-3 border-t border-t-[#283054] border-b border-b-[#283054] relative before:left-0 before:absolute before:w-0 before:h-full before:bg-[#0B8140] hover:before:w-1 before:ease-linear before:duration-75;
     }
 
     .sidebar-nav.active {

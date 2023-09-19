@@ -38,19 +38,21 @@
         </a>
         <div class="group flex flex-col w-full border-b border-b-[#283054]">
           <div class="sidebar-nav !border-t-0 !border-b-0 group-hover:before:w-1">
-            <div class="h-5 w-5">
-              <img src="assets/images/icon-venues.svg" class="h-full w-full object-contain" alt="" />
-            </div>
-            <span>Venues</span>
-            <div class="ml-auto">
-              <img src="assets/images/caret-down.svg" class="max-h-[6px] w-auto group-hover:rotate-180" alt="">
+            <a class="inline-flex items-center gap-3" href="venues.html">
+              <div class="h-5 w-5">
+                <img src="assets/images/icon-venues.svg" class="h-full w-full object-contain" alt="" />
+              </div>
+              <span>Venues</span>
+            </a>
+            <div class="absolute right-0 items-center p-5 toggleSidebarDropdown">
+              <img src="assets/images/caret-down.svg" class="max-h-[6px] inline-block w-auto" alt="">
             </div>
           </div>
-          <div class="flex flex-col w-full h-0 overflow-hidden group-hover:h-auto">
-            <a href="createVenue.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60">
+          <div class="flex flex-col w-full h-0 overflow-hidden">
+            <a href="venueDetail.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60">
               <span class="inline-block ml-8">Venues 1</span>
             </a>
-            <a href="createVenue.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60 mb-3">
+            <a href="venueDetail.html" class="flex text-white px-5 text-xs py-2 bg-transparent hover:bg-[#11172d]/60 mb-3">
               <span class="inline-block ml-8">Venues 2</span>
             </a>
           </div>
@@ -87,7 +89,6 @@
         </a>
       </div>
     </div>
-    <!-- Right Panel -->
     <div class="lg:w-[calc(100%-200px)] w-full">
       <!-- Right Panel Topbar -->
       <div class="flex items-center border-b border-b-[#283054] xl:py-4 py-3 xl:px-9 px-5">
@@ -126,72 +127,45 @@
           </div>
         </div>
       </div>
-      <!-- Right Panel Main Display -->
       <div class="relative xl:px-9 px-5 xl:py-7 py-4 lg:max-h-[calc(100vh-75px)] max-h-[calc(100vh-67px)] overflow-y-auto y-scroll">
-        <div class="flex lg:flex-row flex-col gap-4 items-center justify-between">
-          <h6 class="text-white text-base font-regular">Total Number of players signed up</h6>
-          <button class="btn-theme">Create a Venue</button>
-        </div>
+        <h6 class="text-white text-base font-regular">Total Number of players signed up</h6>
         <div class="overflow-x-auto x-scroll">
           <table class="min-w-full mt-6">
             <thead>
               <tr>
                 <th>Name</th>
+                <th>Sign up date</th>
                 <th>Email</th>
                 <th>Phone</th>
+                <th>Age Bracket</th>
                 <th>Country</th>
                 <th>Town</th>
-                <th>Open<br />Time</th>
-                <th>Closing<br />Time</th>
-                <th>Amount<br />In Account</th>
-                <th class="w-[120px] min-w-[120px]">Actions</th>
+                <th>Player<br />Availability</th>
+                <th>Amount<br/>In Account</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>John Smith</td>
+                <td>5-15-2023</td>
                 <td>johnsmith@gmail.com</td>
                 <td>1112223344</td>
+                <td>Age Bracket</td>
                 <td>Country</td>
-                <td>abc town</td>
-                <td>08:00 PM</td>
+                <td>Town</td>
                 <td>08:00 PM</td>
                 <td>$2515</td>
-                <td>
-                  <button class="p-[5px] scale-100 hover:scale-125 ease-linear duration-100"><img src="assets/images/comment.svg" class="h-[18px] w-auto" alt=""></button>
-                  <button class="p-[5px] scale-100 hover:scale-125 ease-linear duration-100"><img src="assets/images/edit.svg" class="h-[18px] w-auto" alt=""></button>
-                  <button class="p-[5px] scale-100 hover:scale-125 ease-linear duration-100"><img src="assets/images/delete.svg" class="h-[18px] w-auto" alt=""></button>
-                </td>
               </tr>
               <tr>
                 <td>John Smith</td>
+                <td>5-15-2023</td>
                 <td>johnsmith@gmail.com</td>
                 <td>1112223344</td>
+                <td>Age Bracket</td>
                 <td>Country</td>
-                <td>abc town</td>
-                <td>08:00 PM</td>
+                <td>Town</td>
                 <td>08:00 PM</td>
                 <td>$2515</td>
-                <td>
-                  <button class="p-[5px] scale-100 hover:scale-125 ease-linear duration-100"><img src="assets/images/comment.svg" class="h-[18px] w-auto" alt=""></button>
-                  <button class="p-[5px] scale-100 hover:scale-125 ease-linear duration-100"><img src="assets/images/edit.svg" class="h-[18px] w-auto" alt=""></button>
-                  <button class="p-[5px] scale-100 hover:scale-125 ease-linear duration-100"><img src="assets/images/delete.svg" class="h-[18px] w-auto" alt=""></button>
-                </td>
-              </tr>
-              <tr>
-                <td>John Smith</td>
-                <td>johnsmith@gmail.com</td>
-                <td>1112223344</td>
-                <td>Country</td>
-                <td>abc town</td>
-                <td>08:00 PM</td>
-                <td>08:00 PM</td>
-                <td>$2515</td>
-                <td>
-                  <button class="p-[5px] scale-100 hover:scale-125 ease-linear duration-100"><img src="assets/images/comment.svg" class="h-[18px] w-auto" alt=""></button>
-                  <button class="p-[5px] scale-100 hover:scale-125 ease-linear duration-100"><img src="assets/images/edit.svg" class="h-[18px] w-auto" alt=""></button>
-                  <button class="p-[5px] scale-100 hover:scale-125 ease-linear duration-100"><img src="assets/images/delete.svg" class="h-[18px] w-auto" alt=""></button>
-                </td>
               </tr>
             </tbody>
           </table>
