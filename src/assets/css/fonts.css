@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'tommyThin';
+    src: url('./fonts/MADETOMMY-Thin.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tommyLight';
+    src: url('./fonts/MADETOMMY-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tommy';
+    src: url('./fonts/MADETOMMY-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tommyMedium';
+    src: url('./fonts/MADETOMMY-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tommyBold';
+    src: url('./fonts/MADETOMMY-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tommyXBold';
+    src: url('./fonts/MADETOMMY-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tommyBlack';
+    src: url('./fonts/MADETOMMY-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+body
+{
+    font-family: tommy;
+}

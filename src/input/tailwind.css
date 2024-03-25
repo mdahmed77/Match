@@ -1,137 +1,89 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.family-thin{
+    font-family: 'tommyThin';
+}
+.family-light{
+    font-family: 'tommyLight';
+}
+.family-normal{
+    font-family: 'tommy';
+}
+.family-medium{
+    font-family: 'tommyMedium';
+}
+.family-bold{
+    font-family: 'tommyBold';
+}
+.family-extrabold{
+    font-family: 'tommyXBold';
+}
+.family-black{
+    font-family: 'tommyBlack';
+}
 @layer base {
-    @font-face {
-        font-family: 'Regular';
-        src: url(fonts/Inter-Regular.ttf);
-        font-display: swap;
-    }
-
-    @font-face {
-        font-family: 'Medium';
-        src: url(fonts/Inter-Medium.ttf);
-        font-display: swap;
-    }
-
-    @font-face {
-        font-family: 'Bold';
-        src: url(fonts/Inter-Bold.ttf);
-        font-display: swap;
-    }
-
-    @font-face {
-        font-family: 'SemiBold';
-        src: url(fonts/Inter-SemiBold.ttf);
-        font-display: swap;
-    }
-
-    @font-face {
-        font-family: 'Light';
-        src: url(fonts/Inter-Light.ttf);
-        font-display: swap;
-    }
-
-    .font-regular {
-        font-family: 'Regular';
-        font-weight: 400;
-    }
-
-    .font-medium {
-        font-family: 'Medium';
-    }
-
-    .font-bold {
-        font-family: 'Bold';
-    }
-
-    .font-light {
-        font-family: 'Light';
-    }
-
-    .font-semi {
-        font-family: 'SemiBold';
-        font-weight: 600;
-    }
-
-    body {
-        font-family: 'Regular' Arial, sans-serif;
-    }
-
-    a {
-        @apply outline-none;
+    a, button {
+        @apply !outline-none;
     }
 }
 
 @layer components {
-    .sidebarOverlay
-    {
-        @apply fixed inset-0 bg-slate-950/60 backdrop-blur-[2px];
-    }
-    .btn-theme {
-        @apply inline-flex items-center justify-center whitespace-nowrap outline-none xl:h-[45px] lg:h-10 h-9 xl:px-7 lg:px-6 px-5 bg-gradient-to-b from-[#0b8140] to-[#0a5229] rounded-[50px] text-white xl:text-sm md:text-xs text-[11px] font-bold uppercase tracking-wide scale-100 active:scale-[.97];
-    }
-    .form-group {
-        @apply block mb-7 w-full relative;
-    }
-
-    .form-label {
-        @apply text-white xl:text-base md:text-sm text-xs font-normal font-regular block mb-2;
-    }
-
-    .form-field {
-        @apply !w-full h-12 bg-[#1E2646] xl:text-base text-sm rounded-md border border-white border-opacity-5 outline-none text-white px-4 pb-[1px];
-    }
-
     .smooth {
-        @apply ease-in duration-150
+        @apply ease-out duration-100
+    }
+    .btn-solid {
+        @apply smooth !outline-none h-[58px] w-auto px-10 flex items-center justify-center bg-zero text-white border border-zero text-xl family-bold rounded-full pb-1 hover:text-mango active:text-zero active:bg-white active:border-mango;
+    }
+    .btn-outline {
+        @apply smooth !outline-none h-[58px] w-auto px-10 flex items-center justify-center bg-transparent text-zero border border-mango text-xl family-bold rounded-full pb-1 hover:text-mango active:bg-zero active:text-white active:border-zero;
+    }
+    .btn-light {
+        @apply smooth !outline-none h-[58px] w-auto px-10 flex items-center justify-center bg-transparent text-zero border border-mango text-xl family-normal rounded-full pb-1 hover:text-mango active:bg-mango active:text-zero active:border-mango;
+    }
+    .dropMenu
+    {
+        @apply bg-white rounded-xl py-3 min-w-[205px] inline-flex flex-col items-start shadow-[0_1px_4px_0_rgba(0,0,0,0.1)]
+    }
+    .dropMenu li
+    {
+        @apply relative leading-tight flex items-center justify-between w-full
+    }
+    .dropMenu li a{
+        @apply text-black text-base family-normal capitalize hover:text-zero w-full py-2 flex items-center justify-between pl-[30px] pr-5 relative after:h-full after:w-4 bg-transparent after:absolute after:left-full
+    }
+    .dropMenu li a:hover{
+        @apply family-medium
+    }
+    .subMenu
+    {
+        @apply bg-white rounded-xl py-3 min-w-[205px] inline-flex flex-col items-start gap-3 shadow-[0_1px_4px_0_rgba(0,0,0,0.1)] absolute left-[calc(100%+12px)] top-2 invisible opacity-0 smooth
+    }
+    .subMenu a{
+        @apply text-black text-base family-normal capitalize hover:text-zero pl-[30px] pr-5
+    }
+    .dropMenu li:hover .subMenu
+    {
+        @apply visible opacity-100 -top-1
     }
 
-    .signinBg {
-        background-image: url(../images/signinBg.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    .afterSigninBg {
+    /* .bg {
         background-image: url(../images/afterSigninBg.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-    }
+    } */
 
-    .pill {
+    /* .pill {
         @apply relative cursor-pointer py-3 px-3 lg:text-[13px] text-xs font-semi text-white bg-[#1E2646] rounded-t-lg bg-gradient-to-b from-[#1E2646] to-[#1E2646] lg:min-w-[170px] min-w-0 text-center sm:col-span-4 col-span-6;
     }
 
     .pill-active {
         @apply from-[#0b8140] to-[#0a5229];
-    }
+    } */
 
-    .sidebar-nav {
-        @apply relative cursor-pointer w-full p-5 flex items-center text-white text-sm font-regular gap-3 border-t border-t-[#283054] border-b border-b-[#283054] relative before:left-0 before:absolute before:w-0 before:h-full before:bg-[#0B8140] hover:before:w-1 before:ease-linear before:duration-75;
-    }
-
-    .sidebar-nav.active {
-        @apply bg-[#11172D] before:w-1
-    }
-
-    table tr th {
-        @apply text-white font-semi 2xl:first:pl-7 xl:first:pl-6 first:pl-5 2xl:last:pr-7 xl:last:pr-6 last:pr-5 2xl:px-5 px-3 h-14 text-[13px] text-left bg-[#1E2646] first:rounded-tl-lg last:rounded-tr-lg whitespace-nowrap;
-        /* border border-[#283054] */
-    }
-
-    table tr td {
-        @apply text-white font-light 2xl:first:pl-7 xl:first:pl-6 first:pl-5 2xl:last:pr-7 xl:last:pr-6 last:pr-5 xl:h-14 h-12 2xl:px-5 px-3 text-sm text-left whitespace-nowrap;
-    }
-
-    table tbody tr+tr {
-        @apply border-t border-t-[#283054]
-    }
 }
 
 @layer utilities {
