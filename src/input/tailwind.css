@@ -127,7 +127,7 @@
   }
 
   .x-scroll::-webkit-scrollbar-thumb {
-    @apply bg-gradient-to-b from-[#0b8140] to-[#0a5229] rounded-[50px];
+    @apply bg-mango rounded-[50px];
   }
 
   .x-scroll::-webkit-scrollbar-track {
@@ -218,4 +218,13 @@
 .gradientBg
 {
   background-image: url(../images/gradientBg.svg);
+}
+.videoBg{
+  background-image: url(../images/videoBanner.png);
+}
+.getstartedBanner{
+  background-image:url(../images/getstartedbanner.svg);
+}
+.getstartedBanner2{
+  background-image:url(../images/getstartedbanner2.svg);
 }
