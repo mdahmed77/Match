@@ -1275,6 +1275,10 @@ a,
   width: 100%;
 }
 
+.w-\[200px\] {
+  width: 200px;
+}
+
 .min-w-\[45px\] {
   min-width: 45px;
 }
@@ -1360,6 +1364,10 @@ a,
 
 .gap-\[10px\] {
   gap: 10px;
+}
+
+.gap-\[50px\] {
+  gap: 50px;
 }
 
 .overflow-hidden {
@@ -1514,6 +1522,10 @@ a,
   padding: 60px;
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1584,6 +1596,11 @@ a,
   padding-bottom: 19px;
 }
 
+.px-\[130px\] {
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
 .pb-32 {
   padding-bottom: 8rem;
 }
@@ -1642,6 +1659,14 @@ a,
 
 .pt-\[60px\] {
   padding-top: 60px;
+}
+
+.pb-\[141px\] {
+  padding-bottom: 141px;
+}
+
+.pt-\[131px\] {
+  padding-top: 131px;
 }
 
 .text-center {
