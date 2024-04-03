@@ -215,13 +215,16 @@
 {
   @apply bg-zero text-white font-bold
 }
-ul .slick-active
+.slick-active button
 {
   @apply bg-mango
 }
-.sliderControls .slick-dots {
+.meetControls .slick-dots {
  @apply justify-center mt-[58px]
 }
+.studentControls .slick-dots {
+  @apply justify-center mt-[58px]
+ }
 .slick-slide {
 @apply mx-[10px]
 }

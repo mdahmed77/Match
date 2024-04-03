@@ -1695,6 +1695,10 @@ a,
   padding-bottom: 141px;
 }
 
+.pb-\[40px\] {
+  padding-bottom: 40px;
+}
+
 .pb-\[50px\] {
   padding-bottom: 50px;
 }
@@ -1705,6 +1709,10 @@ a,
 
 .pb-\[90px\] {
   padding-bottom: 90px;
+}
+
+.pe-\[40px\] {
+  padding-inline-end: 40px;
 }
 
 .pe-\[50px\] {
@@ -1731,12 +1739,20 @@ a,
   padding-inline-start: 1.25rem;
 }
 
+.ps-\[10px\] {
+  padding-inline-start: 10px;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
 
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pt-\[10px\] {
+  padding-top: 10px;
 }
 
 .pt-\[131px\] {
@@ -1946,6 +1962,10 @@ a,
 
 .ease-\[cubic-bezier\(0\.95\2c 0\.02\2c 0\.58\2c 0\.94\)\] {
   transition-timing-function: cubic-bezier(0.95,0.02,0.58,0.94);
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 /* Scroll Bar */
@@ -2185,12 +2205,17 @@ a,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-ul .slick-active {
+.slick-active button {
   --tw-bg-opacity: 1;
   background-color: rgb(254 187 36 / var(--tw-bg-opacity));
 }
 
-.sliderControls .slick-dots {
+.meetControls .slick-dots {
+  margin-top: 58px;
+  justify-content: center;
+}
+
+.studentControls .slick-dots {
   margin-top: 58px;
   justify-content: center;
 }
@@ -2314,30 +2339,30 @@ ul .slick-active {
   fill: #FEBB24;
 }
 
-.\[\&\>ul\>li\]\:h-4>ul>li {
+.\[\&\>ul\>li\>button\]\:h-4>ul>li>button {
   height: 1rem;
 }
 
-.\[\&\>ul\>li\]\:w-4>ul>li {
+.\[\&\>ul\>li\>button\]\:w-4>ul>li>button {
   width: 1rem;
 }
 
-.\[\&\>ul\>li\]\:rounded-xl>ul>li {
+.\[\&\>ul\>li\>button\]\:rounded-xl>ul>li>button {
   border-radius: 0.75rem;
 }
 
-.\[\&\>ul\>li\]\:bg-white>ul>li {
+.\[\&\>ul\>li\>button\]\:bg-white>ul>li>button {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.\[\&\>ul\>li\]\:text-\[0\]>ul>li {
-  font-size: 0;
-}
-
-.\[\&\>ul\>li\]\:hover\:bg-mango:hover>ul>li {
+.\[\&\>ul\>li\>button\]\:hover\:bg-mango:hover>ul>li>button {
   --tw-bg-opacity: 1;
   background-color: rgb(254 187 36 / var(--tw-bg-opacity));
+}
+
+.\[\&\>ul\>li\]\:text-\[0\]>ul>li {
+  font-size: 0;
 }
 
 .\[\&\>ul\]\:flex>ul {
