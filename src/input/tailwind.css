@@ -215,6 +215,16 @@
 {
   @apply bg-zero text-white font-bold
 }
+ul .slick-active
+{
+  @apply bg-mango
+}
+.sliderControls .slick-dots {
+ @apply justify-center mt-[58px]
+}
+.slick-slide {
+@apply mx-[10px]
+}
 .gradientBg
 {
   background-image: url(../images/gradientBg.svg);
