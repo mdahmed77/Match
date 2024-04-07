@@ -2274,7 +2274,7 @@ a,
   background-image: url(../images/white-check.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size:12px;
+  background-size: 12px;
 }
 
 .dropperWrapper .drop-list input {
@@ -2317,8 +2317,8 @@ a,
 }
 
 .slick-active button {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 187 36 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(254 187 36 / var(--tw-bg-opacity)) !important;
 }
 
 .meetControls .slick-dots {
@@ -2336,21 +2336,20 @@ a,
   margin-right: 10px;
 }
 
-.gradientBg
-{
+.gradientBg {
   background-image: url(../images/gradientBg.svg);
 }
 
-.videoBg{
+.videoBg {
   background-image: url(../images/videoBanner.png);
 }
 
-.getstartedBanner{
-  background-image:url(../images/getstartedbanner.svg);
+.getstartedBanner {
+  background-image: url(../images/getstartedbanner.svg);
 }
 
-.getstartedBanner2{
-  background-image:url(../images/getstartedbanner2.svg);
+.getstartedBanner2 {
+  background-image: url(../images/getstartedbanner2.svg);
 }
 
 .getstartedBanner3{
@@ -2505,6 +2504,11 @@ a,
   fill: #FEBB24;
 }
 
+.\[\&\>ul\>li\>button\:hover\]\:bg-mango>ul>li>button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 187 36 / var(--tw-bg-opacity));
+}
+
 .\[\&\>ul\>li\>button\]\:h-4>ul>li>button {
   height: 1rem;
 }
@@ -2520,11 +2524,6 @@ a,
 .\[\&\>ul\>li\>button\]\:bg-white>ul>li>button {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.\[\&\>ul\>li\>button\]\:hover\:bg-mango:hover>ul>li>button {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 187 36 / var(--tw-bg-opacity));
 }
 
 .\[\&\>ul\>li\]\:text-\[0\]>ul>li {
