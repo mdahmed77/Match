@@ -239,3 +239,7 @@
 .getstartedBanner3{
   background-image:url(../images/help.svg);
 }
+.container
+{
+  @apply md:px-0 px-5
+}

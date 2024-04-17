@@ -1103,6 +1103,10 @@ a,
   margin-bottom: 10px;
 }
 
+.mb-\[123px\] {
+  margin-bottom: 123px;
+}
+
 .mb-\[12px\] {
   margin-bottom: 12px;
 }
@@ -1165,10 +1169,6 @@ a,
 
 .mt-\[18px\] {
   margin-top: 18px;
-}
-
-.mb-\[123px\] {
-  margin-bottom: 123px;
 }
 
 .block {
@@ -1279,6 +1279,14 @@ a,
   height: 32px;
 }
 
+.h-\[350px\] {
+  height: 350px;
+}
+
+.h-\[410px\] {
+  height: 410px;
+}
+
 .h-\[45\%\] {
   height: 45%;
 }
@@ -1313,26 +1321,6 @@ a,
 
 .h-full {
   height: 100%;
-}
-
-.h-\[350px\] {
-  height: 350px;
-}
-
-.h-\[398px\] {
-  height: 398px;
-}
-
-.h-\[340px\] {
-  height: 340px;
-}
-
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-\[410px\] {
-  height: 410px;
 }
 
 .w-20 {
@@ -1518,16 +1506,16 @@ a,
   justify-content: space-between;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
 
 .gap-2\.5 {
   gap: 0.625rem;
-}
-
-.gap-20 {
-  gap: 5rem;
 }
 
 .gap-3 {
@@ -2230,24 +2218,6 @@ a,
 
 /* Scroll Bar */
 
-.y-scroll::-webkit-scrollbar {
-  width: 7px;
-  background-color: transparent;
-}
-
-.y-scroll::-webkit-scrollbar-thumb {
-  border-radius: 50px;
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  --tw-gradient-from: #0b8140 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(11 129 64 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #0a5229 var(--tw-gradient-to-position);
-}
-
-.y-scroll::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
 .family-thin {
   font-family: "tommyThin";
 }
@@ -2523,6 +2493,18 @@ a,
   background-image:url(../images/help.svg);
 }
 
+.container {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -2649,6 +2631,42 @@ a,
 
 .group\/study:hover .group-hover\/study\:opacity-100 {
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
+  }
 }
 
 .\[\&\>svg\]\:fill-night>svg {
