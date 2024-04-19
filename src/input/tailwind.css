@@ -127,11 +127,11 @@
   }
 
   .x-scroll::-webkit-scrollbar-thumb {
-    @apply bg-mango rounded-[50px];
+    @apply bg-mango rounded-[50px] ;
   }
 
   .x-scroll::-webkit-scrollbar-track {
-    @apply bg-transparent;
+    @apply bg-[#454866] w-full;
   }
 
   .y-scroll::-webkit-scrollbar {
@@ -242,4 +242,7 @@
 .container
 {
   @apply md:px-0 px-5
+}
+.hompage2Bg{
+  background-image: url(../images/hp2-bg.png);
 }

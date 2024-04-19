@@ -1034,6 +1034,11 @@ a,
   grid-column: span 7 / span 7;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -1077,10 +1082,6 @@ a,
 
 .mb-3 {
   margin-bottom: 0.75rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .mb-5 {
@@ -1127,6 +1128,10 @@ a,
   margin-bottom: 31px;
 }
 
+.mb-\[40px\] {
+  margin-bottom: 40px;
+}
+
 .mb-\[62px\] {
   margin-bottom: 62px;
 }
@@ -1165,6 +1170,10 @@ a,
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-\[10px\] {
+  margin-top: 10px;
 }
 
 .mt-\[18px\] {
@@ -1265,6 +1274,10 @@ a,
 
 .h-\[21px\] {
   height: 21px;
+}
+
+.h-\[230px\] {
+  height: 230px;
 }
 
 .h-\[24px\] {
@@ -1375,6 +1388,10 @@ a,
   width: 26px;
 }
 
+.w-\[280px\] {
+  width: 280px;
+}
+
 .w-\[30px\] {
   width: 30px;
 }
@@ -1401,10 +1418,6 @@ a,
 
 .w-\[82\.5px\] {
   width: 82.5px;
-}
-
-.w-\[875px\] {
-  width: 875px;
 }
 
 .w-\[93px\] {
@@ -1546,6 +1559,10 @@ a,
   gap: 18px;
 }
 
+.gap-\[20px\] {
+  gap: 20px;
+}
+
 .gap-\[23px\] {
   gap: 23px;
 }
@@ -1554,24 +1571,28 @@ a,
   gap: 27px;
 }
 
-.gap-\[45px\] {
-  gap: 45px;
-}
-
-.gap-\[50px\] {
-  gap: 50px;
-}
-
 .gap-\[7px\] {
   gap: 7px;
+}
+
+.gap-\[31px\] {
+  gap: 31px;
 }
 
 .overflow-hidden {
   overflow: hidden;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-y-scroll {
   overflow-y: scroll;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-3xl {
@@ -1764,10 +1785,6 @@ a,
   padding: 10px;
 }
 
-.p-\[60px\] {
-  padding: 60px;
-}
-
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1803,14 +1820,19 @@ a,
   padding-right: 14px;
 }
 
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .px-\[29px\] {
   padding-left: 29px;
   padding-right: 29px;
 }
 
-.px-\[50px\] {
-  padding-left: 50px;
-  padding-right: 50px;
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .px-\[90px\] {
@@ -1863,6 +1885,11 @@ a,
   padding-bottom: 19px;
 }
 
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .py-\[4px\] {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1871,6 +1898,16 @@ a,
 .py-\[9px\] {
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.py-\[202px\] {
+  padding-top: 202px;
+  padding-bottom: 202px;
+}
+
+.py-\[77px\] {
+  padding-top: 77px;
+  padding-bottom: 77px;
 }
 
 .pb-32 {
@@ -1893,6 +1930,10 @@ a,
   padding-bottom: 141px;
 }
 
+.pb-\[20px\] {
+  padding-bottom: 20px;
+}
+
 .pb-\[30px\] {
   padding-bottom: 30px;
 }
@@ -1903,10 +1944,6 @@ a,
 
 .pb-\[51px\] {
   padding-bottom: 51px;
-}
-
-.pb-\[88px\] {
-  padding-bottom: 88px;
 }
 
 .pb-\[90px\] {
@@ -2011,6 +2048,14 @@ a,
 
 .pt-\[90px\] {
   padding-top: 90px;
+}
+
+.pb-\[178px\] {
+  padding-bottom: 178px;
+}
+
+.pt-\[202px\] {
+  padding-top: 202px;
 }
 
 .text-center {
@@ -2217,6 +2262,23 @@ a,
 }
 
 /* Scroll Bar */
+
+.x-scroll::-webkit-scrollbar {
+  height: 7px;
+  background-color: transparent;
+}
+
+.x-scroll::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 187 36 / var(--tw-bg-opacity));
+}
+
+.x-scroll::-webkit-scrollbar-track {
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 72 102 / var(--tw-bg-opacity));
+}
 
 .family-thin {
   font-family: "tommyThin";
@@ -2505,6 +2567,10 @@ a,
   }
 }
 
+.hompage2Bg{
+  background-image: url(../images/hp2-bg.png);
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -2641,11 +2707,27 @@ a,
   .md\:col-span-6 {
     grid-column: span 6 / span 6;
   }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:gap-\[45px\] {
+    gap: 45px;
+  }
 }
 
 @media (min-width: 992px) {
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .lg\:col-span-4 {
@@ -2656,8 +2738,16 @@ a,
     grid-column: span 5 / span 5;
   }
 
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .lg\:col-span-7 {
     grid-column: span 7 / span 7;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:flex-row {
@@ -2666,6 +2756,54 @@ a,
 
   .lg\:gap-20 {
     gap: 5rem;
+  }
+
+  .lg\:gap-\[50px\] {
+    gap: 50px;
+  }
+
+  .lg\:p-\[60px\] {
+    padding: 60px;
+  }
+
+  .lg\:px-\[152px\] {
+    padding-left: 152px;
+    padding-right: 152px;
+  }
+
+  .lg\:px-\[50px\] {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .lg\:text-start {
+    text-align: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .xl\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
+  .xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .xl\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:pb-\[88px\] {
+    padding-bottom: 88px;
   }
 }
 
