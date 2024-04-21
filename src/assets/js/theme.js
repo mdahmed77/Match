@@ -16,3 +16,15 @@ $(document).ready(function () {
         });
     });
 });
+
+$(document).ready(function () {
+  $('.accordion-button').click(function () {
+    // Hide all content sections
+    $('.accordion-content').slideUp();
+    $('.accordion-button').removeClass('active');
+
+    // Toggle the content of the clicked section
+    $(this).toggleClass('active').parent().next('.accordion-content').slideToggle();
+  });
+});
+

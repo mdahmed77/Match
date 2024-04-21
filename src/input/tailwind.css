@@ -246,3 +246,9 @@
 .hompage2Bg{
   background-image: url(../images/hp2-bg.png);
 }
+.hompage2bannerBg{
+  background-image: url(../images/home2bannerbg.svg);
+}
+.InstructorBg{
+  background-image: url(../images/instructorbg.svg);
+}
