@@ -954,6 +954,10 @@ a,
   bottom: -50px;
 }
 
+.bottom-\[10px\] {
+  bottom: 10px;
+}
+
 .bottom-\[28px\] {
   bottom: 28px;
 }
@@ -964,6 +968,10 @@ a,
 
 .left-\[-100px\] {
   left: -100px;
+}
+
+.left-\[10px\] {
+  left: 10px;
 }
 
 .left-\[28px\] {
@@ -1144,6 +1152,10 @@ a,
   margin-bottom: 32px;
 }
 
+.mb-\[38px\] {
+  margin-bottom: 38px;
+}
+
 .mb-\[40px\] {
   margin-bottom: 40px;
 }
@@ -1210,6 +1222,18 @@ a,
 
 .mt-\[29px\] {
   margin-top: 29px;
+}
+
+.mb-\[162px\] {
+  margin-bottom: 162px;
+}
+
+.mt-\[98px\] {
+  margin-top: 98px;
+}
+
+.mb-\[23px\] {
+  margin-bottom: 23px;
 }
 
 .block {
@@ -1328,10 +1352,6 @@ a,
   height: 24px;
 }
 
-.h-\[280px\] {
-  height: 280px;
-}
-
 .h-\[30px\] {
   height: 30px;
 }
@@ -1346,10 +1366,6 @@ a,
 
 .h-\[35px\] {
   height: 35px;
-}
-
-.h-\[379px\] {
-  height: 379px;
 }
 
 .h-\[38px\] {
@@ -1466,10 +1482,6 @@ a,
 
 .w-\[35px\] {
   width: 35px;
-}
-
-.w-\[379px\] {
-  width: 379px;
 }
 
 .w-\[38px\] {
@@ -1719,6 +1731,10 @@ a,
   border-radius: 1.5rem;
 }
 
+.rounded-\[140px\] {
+  border-radius: 140px;
+}
+
 .rounded-\[200px\] {
   border-radius: 200px;
 }
@@ -1755,8 +1771,8 @@ a,
   border-radius: 0.75rem;
 }
 
-.rounded-\[140px\] {
-  border-radius: 140px;
+.rounded-\[30px\] {
+  border-radius: 30px;
 }
 
 .rounded-bl-none {
@@ -1886,6 +1902,16 @@ a,
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-\[\#8fa0b0\] {
+  --tw-gradient-from: #8fa0b0 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(143 160 176 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-\[\#494e56\] {
+  --tw-gradient-to: #494e56 var(--tw-gradient-to-position);
+}
+
 .to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
@@ -1991,6 +2017,16 @@ a,
   padding-right: 30px;
 }
 
+.px-\[32px\] {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.px-\[81px\] {
+  padding-left: 81px;
+  padding-right: 81px;
+}
+
 .px-\[90px\] {
   padding-left: 90px;
   padding-right: 90px;
@@ -2051,6 +2087,11 @@ a,
   padding-bottom: 4px;
 }
 
+.py-\[61px\] {
+  padding-top: 61px;
+  padding-bottom: 61px;
+}
+
 .py-\[77px\] {
   padding-top: 77px;
   padding-bottom: 77px;
@@ -2066,6 +2107,11 @@ a,
   padding-bottom: 9px;
 }
 
+.py-\[30px\] {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .pb-32 {
   padding-bottom: 8rem;
 }
@@ -2078,8 +2124,16 @@ a,
   padding-bottom: 1.25rem;
 }
 
+.pb-\[100px\] {
+  padding-bottom: 100px;
+}
+
 .pb-\[120px\] {
   padding-bottom: 120px;
+}
+
+.pb-\[122px\] {
+  padding-bottom: 122px;
 }
 
 .pb-\[141px\] {
@@ -2118,6 +2172,10 @@ a,
   padding-bottom: 90px;
 }
 
+.pe-0 {
+  padding-inline-end: 0px;
+}
+
 .pe-\[10px\] {
   padding-inline-end: 10px;
 }
@@ -2150,6 +2208,10 @@ a,
   padding-right: 2px;
 }
 
+.ps-0 {
+  padding-inline-start: 0px;
+}
+
 .ps-5 {
   padding-inline-start: 1.25rem;
 }
@@ -2170,12 +2232,24 @@ a,
   padding-inline-start: 40px;
 }
 
+.ps-\[90px\] {
+  padding-inline-start: 90px;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pt-\[111px\] {
+  padding-top: 111px;
 }
 
 .pt-\[131px\] {
@@ -2218,6 +2292,10 @@ a,
   padding-top: 46px;
 }
 
+.pt-\[56px\] {
+  padding-top: 56px;
+}
+
 .pt-\[60px\] {
   padding-top: 60px;
 }
@@ -2236,6 +2314,10 @@ a,
 
 .pt-\[90px\] {
   padding-top: 90px;
+}
+
+.ps-\[34px\] {
+  padding-inline-start: 34px;
 }
 
 .text-left {
@@ -2279,6 +2361,10 @@ a,
 
 .text-\[30px\] {
   font-size: 30px;
+}
+
+.text-\[36px\] {
+  font-size: 36px;
 }
 
 .text-\[40px\] {
@@ -2696,7 +2782,6 @@ a,
   height: 60px;
   flex-grow: 1;
   border-radius: 40px;
-  background-color: transparent;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   font-size: 1.25rem;
@@ -2789,6 +2874,18 @@ a,
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
+}
+
+.hp3banner1{
+  background-image: url(../images/hp3banner1.svg);
+}
+
+.hp3banner3{
+  background-image: url(../images/hp3banner3.png);
+}
+
+.hp3banner2{
+  background-image: url(../images/hp3banner2.png);
 }
 
 .before\:absolute::before {
@@ -2953,6 +3050,10 @@ a,
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  .md\:text-start {
+    text-align: start;
+  }
 }
 
 @media (min-width: 992px) {
@@ -3020,8 +3121,16 @@ a,
     padding-right: 50px;
   }
 
+  .lg\:pe-\[50px\] {
+    padding-inline-end: 50px;
+  }
+
   .lg\:ps-\[128px\] {
     padding-inline-start: 128px;
+  }
+
+  .lg\:ps-\[16px\] {
+    padding-inline-start: 16px;
   }
 
   .lg\:text-start {

@@ -204,7 +204,7 @@
   @apply rounded-[50px] bg-white flex items-center p-2.5;
 }
 .tabs .tab-link {
-  @apply h-[60px] grow text-xl px-5 rounded-[40px] bg-transparent text-black font-normal;
+  @apply h-[60px] grow text-xl px-5 rounded-[40px]  text-black font-normal;
 }
 .tabs .tab-link.active {
   @apply bg-zero text-white font-bold;
@@ -257,4 +257,13 @@
 }
 .InstructorsControls{
   @apply flex justify-center gap-5 items-center relative
+}
+.hp3banner1{
+  background-image: url(../images/hp3banner1.svg);
+}
+.hp3banner3{
+  background-image: url(../images/hp3banner3.png);
+}
+.hp3banner2{
+  background-image: url(../images/hp3banner2.png);
 }
