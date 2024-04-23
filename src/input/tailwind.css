@@ -221,6 +221,9 @@
 .slick-slide {
   @apply mx-[10px];
 }
+.RealstoriesSlider .slick-slide {
+  @apply mx-0;
+}
 .gradientBg {
   background-image: url(../images/gradientBg.svg);
 }
@@ -251,4 +254,7 @@
 }
 .InstructorBg{
   background-image: url(../images/instructorbg.svg);
+}
+.InstructorsControls{
+  @apply flex justify-center gap-5 items-center relative
 }
